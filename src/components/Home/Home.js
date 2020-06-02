@@ -9,8 +9,10 @@ const Home = () => {
         <React.Fragment>
             <OccupancyContextProvider>
                 <NavBar />
-                <RoomsAvailability />
-                <RoomsOccupied />
+                <div className="outerContainer">
+                    <RoomsAvailability />
+                    <RoomsOccupied />
+                </div>
             </OccupancyContextProvider>
         </React.Fragment>
     );
