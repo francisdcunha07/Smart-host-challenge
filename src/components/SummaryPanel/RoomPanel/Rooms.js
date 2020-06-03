@@ -10,7 +10,7 @@ const Rooms = (props) => {
             <HotelRoundedIcon />
             <div className="vr"></div>
             <div> Guest{index + 1}</div>
-            <div> &euro;{guest}</div>
+            <div className="FT13"> &euro;{guest}</div>
         </div>
     );
 }
