@@ -38,7 +38,8 @@ Form{
 
   input[type='submit']{
     margin: 10px auto;
-    background: #eee;
+    background: rgb(223, 222, 222);
+   
     border: 0;
     padding: 6px 20px;
     display: block;
@@ -46,13 +47,13 @@ Form{
   }
 
   input[type='submit']:hover{
-    background: rgb(223, 222, 222);
-   
+  
+    background: rgb(175, 173, 173);;
   }
 
   
   /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 640px) and (max-device-width : 736px) {
+@media only screen and (min-width : 640px) and (max-width : 768px) {
   .roomsContainer{
     width: 75%;
     height: 35%;
@@ -73,7 +74,7 @@ Form{
    }
   }
 
-  @media only screen and (min-device-width : 840px) and (max-device-width : 1024px) and (orientation : landscape) {
+  @media only screen and (min-width : 770px) and (max-width : 1024px)  {
     /* Styles */
     .roomsContainer{
       width: 70%;

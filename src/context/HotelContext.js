@@ -1,6 +1,7 @@
 import React, { useState,  createContext, useReducer, useEffect } from 'react';
 import { OccupancyReducer } from '../reducers/OccupancyReducer';
 import data from '../Data/data.json'
+import { Service } from '../Services/Service';
 
 export const OccupancyContext = createContext();
 
@@ -9,7 +10,7 @@ const OccupancyContextProvider = (props) => {
     const [roomsData, dispatch] = useReducer(OccupancyReducer, initialState);
 
     useEffect(() => {
-            const guestList = data.guest;
+            const guestList =  data.guest;
             dispatch({ type: 'UPDATE_STATE', payload: guestList});
       
     }, [])

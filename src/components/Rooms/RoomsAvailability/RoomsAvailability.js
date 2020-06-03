@@ -21,11 +21,11 @@ const RoomsAvailability = () => {
                 <form onSubmit={handleOccupancy}>
                     <div>
                         <span className="label-input100">No. of Premium Rooms</span>
-                        <input type="number" placeholder="Enter Premium Rooms" required onChange={e => setPremiumRooms(e.target.value)} />
+                        <input type="number" placeholder="Enter Premium Rooms" min="0" required onChange={e => setPremiumRooms(e.target.value)} />
                     </div>
                     <div>
                         <span className="label-input100">No. of Economy Rooms</span>
-                        <input type="number" placeholder="Enter Economy Rooms Occupied" required onChange={e => setEconomyRooms(e.target.value)} />
+                        <input type="number" min="0" placeholder="Enter Economy Rooms Occupied" required onChange={e => setEconomyRooms(e.target.value)} />
 
                     </div>
                     <input type="submit" value="Calculate Occupancy" />

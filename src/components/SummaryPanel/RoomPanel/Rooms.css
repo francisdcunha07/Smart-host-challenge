@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.room:hover{
+   background: rgba(0, 0, 0, 0.3);
+}
 
 
 .vr{
@@ -21,7 +24,7 @@
 
 
   /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width : 640px) and (max-device-width : 736px) {
+  @media only screen and (min-width : 600px) and (max-width : 768px) {
     .room{
         width: 25%;
         height: 8vh;
@@ -43,7 +46,7 @@
     }
     }
   
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    @media only screen and (min-width : 770px)  {
       /* Styles */
       .room{
         width: 42%;
@@ -53,30 +56,7 @@
     }
       }
 
-      @media only screen 
-      and (min-device-width : 768px) 
-      and (max-device-height : 812px) 
-      and (-webkit-device-pixel-ratio : 3) {
-     
-        .room{
-            width: 42%;
-            height: 8vh;
-            margin-bottom: 1vw;
-         
-        }
-       }
-  
-       /* @media only screen and (min-width : 768px) and (max-width : 1300px) {
-        /* Styles */
-        /* .room{
-          width: 42%;
-          height: 5vh;
-          margin-bottom: 1.5vw;
-         
-      }
-        } */ 
-
-     @media (min-width:1025px) { 
+    @media (min-width:1025px) { 
         .room{
             width: 36%;
             height: 5vh;
@@ -84,9 +64,6 @@
             margin-right: 2vw;
          
         }
-        
-       
-  
      }
 
      @media (min-width:1281px) { 

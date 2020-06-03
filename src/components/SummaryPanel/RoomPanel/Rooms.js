@@ -9,8 +9,8 @@ const Rooms = (props) => {
         <div className="room">
             <HotelRoundedIcon />
             <div className="vr"></div>
-            <div> Guest{index}</div>
-            <div> ${guest}</div>
+            <div> Guest{index + 1}</div>
+            <div> &euro;{guest}</div>
         </div>
     );
 }
